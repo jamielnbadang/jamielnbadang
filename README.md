@@ -1,12 +1,12 @@
-- 👋 Hi, I’m @jamielnbadang
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-jamielnbadang/jamielnbadang is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+function strCount (str , letter) {
+  let count = 0 
+  for (let x = 0; x < str.length; x++){
+    if (str[x] == letter) {
+      count ++; 
+    }
+  }
+   return count;
+}
+console.log(strCount("Hello", 'o'));
+console.log(strCount("Hello", 'l'));
+console.log(strCount(" ", 'z'));
